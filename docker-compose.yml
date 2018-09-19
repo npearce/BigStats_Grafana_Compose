@@ -1,0 +1,14 @@
+
+version: "2"
+
+services:
+  graphite-statsd:
+   image: graphiteapp/graphite-statsd
+   ports:
+    - "80:80"
+    - "8125:8125/udp"
+
+  grafana:
+   image: grafana/grafana
+   ports:
+    - "3000:3000"
