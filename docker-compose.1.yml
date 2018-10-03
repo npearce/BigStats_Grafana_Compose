@@ -12,8 +12,4 @@ services:
    image: grafana/grafana
    ports:
     - "3000:3000"
-   volume:
-    - type: bind
-      source: ./datasources
-      target: /etc/grafana/provisioning/datasources/
 
